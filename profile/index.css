@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+    background: url("card2.png");
+}
+
+/* Profile Card with 3D Effect */
+.profile-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    
+}
+
+/* Skills Section */
+h2 {
+    margin-top: 30px;
+    color: #eeeeeb;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    background: #1b1a1a;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Skill Hover Effects */
+.skill:hover {
+    transform: scale(1.1) rotateY(10deg);
+    box-shadow: 0px 10px 20px rgba(249, 250, 250, 0.838);
+}
+
+/* Skill Icons */
+.skill img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode h2 {
+    color: #fcfbf4;
+}
+
+.dark-mode .profile-card {
+    background: #333;
+}
+
+.dark-mode .skill {
+    background: #eeeeeb;
+    color:rgb(100, 98, 98)
+}
+
+.dark-mode .skill:hover {
+    box-shadow: 0px 10px 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+/* Background for Profile Card */
+.profile-card {
+     
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ;
+    background: url("card3.png");
+
+}
+
+/* 3D Hover Effect */
+.profile-card:hover {
+    transform: rotateX(10deg) rotateY(10deg);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    background: rgb(237, 236, 236); /* Solid color on hover */
+}
+
+/* Dark Mode Profile Card */
+.dark-mode .profile-card {
+    background: rgba(51, 51, 51, 0.9); 
+    color: rgb(20, 104, 200);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #007bb5; 
+    transition: 0.3s;
+}
+
+.social-links a:nth-child(2) { color: #333; } 
+.social-links a:nth-child(3) { color: #D44638; } 
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+
+.contact-btn {
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background: #00aced; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #007bb5;
+}
+
+
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #007bb5;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.project-card a:hover {
+    background: #005f8a;
+}
