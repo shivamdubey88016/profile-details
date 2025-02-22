@@ -4,7 +4,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    transition: background 0.3s, color 0.3s;
+    transition: backgroud 0.3s, color 0.3s;
     background: url("card2.png");
 }
 
